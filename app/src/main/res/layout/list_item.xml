@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/normalLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/title"
+        android:textSize="25sp"
+        android:textColor="#000000"
+        android:paddingLeft="16dp"
+        android:paddingBottom="1dp"
+        android:paddingTop="4dp"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="18dp"
+        android:layout_below="@id/title"
+        android:id="@+id/note_preview"
+        android:textSize="14sp"
+        android:text="note"
+        android:textColor="#616161"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginBottom="4dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/undoView"
+        android:textSize="23sp"
+        android:textColor="#f5f5f5"
+        android:text="Undo"
+        android:paddingRight="16dp"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        android:gravity="center_vertical"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/deletedTextview"
+        android:text="Deleted"
+        android:paddingLeft="16dp"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        android:textColor="#f5f5f5"
+        android:gravity="center_vertical"
+        android:layout_alignParentLeft="true"
+        android:textSize="23sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/underlineColor"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

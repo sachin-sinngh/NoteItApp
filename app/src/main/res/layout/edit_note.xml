@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/app_color"
+    tools:context="com.example.sachinchauhan.noteitapp.EditNoteActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/app_bar_color"
+        android:elevation="2dp"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/title_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Title:"
+        android:textStyle="bold"
+        android:paddingLeft="16dp"
+        android:paddingTop="2dp"
+        android:textSize="26sp"/>
+
+    <EditText
+        android:id="@+id/edit_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|left"
+        android:paddingLeft="16dp"
+        android:paddingTop="2dp"
+        android:textSize="25sp"
+        android:background="@null"/>
+
+    <TextView
+        android:id="@+id/note_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|left"
+        android:text="Note:"
+        android:textStyle="bold"
+        android:paddingTop="1dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="4dp"
+        android:paddingBottom="1dp"
+        android:textSize="26sp"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="top|left"
+        android:layout_gravity="bottom"
+        android:id="@+id/edit_note"
+        android:background="@null"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textSize="20sp" />
+</LinearLayout>

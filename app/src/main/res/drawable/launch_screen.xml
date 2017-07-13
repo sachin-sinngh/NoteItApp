@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- launcher Screen Background (Color/Image) -->
+    <item android:drawable="@color/launch_screen_background" />
+
+    <!-- App Logo which comes center of the Screen due to gravity:"center" -->
+    <item
+        android:left="115dp"
+        android:top="210dp"
+        android:width="125dp"
+        android:height="120dp">
+        <bitmap
+            android:gravity="center|fill"
+            android:src="@mipmap/note_it_image"/>
+    </item>
+
+    <item
+        android:width="130dp"
+        android:height="130dp"
+        android:top="520dp"
+        android:left="115dp">
+        <bitmap
+            android:gravity="fill"
+            android:src="@mipmap/note_it_text"/>
+    </item>
+</layer-list>
