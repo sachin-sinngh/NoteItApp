@@ -17,7 +17,7 @@ import android.widget.Toast;
  * Created by SachinChauhan on 7/6/2017.
  */
 
-public class EditNoteActivity extends AppCompatActivity implements View.OnTouchListener{
+public class EditNoteActivity extends AppCompatActivity{
     EditText title_edit;
     EditText note_edit;
     Intent launchingIntent;
@@ -44,8 +44,6 @@ public class EditNoteActivity extends AppCompatActivity implements View.OnTouchL
         else{
             noteData =new NoteData();
         }
-     //   title_edit.setOnTouchListener(this);
-       // note_edit.setOnTouchListener(this);
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -86,16 +84,5 @@ public class EditNoteActivity extends AppCompatActivity implements View.OnTouchL
             }
         //noinspection SimplifiableIfStatement
         return super.onOptionsItemSelected(item);
-    }
-
-    @Override
-    public boolean onTouch(View v, MotionEvent event) {
-        int x=(int)event.getX();
-        int y=(int)event.getY();
-
-        if(event.getAction()==0)
-            v.scrollTo(x,y);
-        Log.v("MOTION-----",""+event.getAction());
-        return false;
     }
 }
